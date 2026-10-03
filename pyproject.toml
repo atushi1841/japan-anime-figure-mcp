@@ -1,0 +1,17 @@
+[project]
+name = "japan-anime-figure-mcp"
+version = "1.0.0"
+description = "Read-only MCP server exposing Japanese anime figure price comparison data from MyFigureList and other sources."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+author = { name = "Kensho Project" }
+dependencies = [
+    "fastmcp>=3.0.0",
+]
+
+[project.scripts]
+japan-anime-figure-mcp = "src.stdio_main:main"
+
+[tool.uv]
+package = false
