@@ -1,5 +1,6 @@
 # japan-anime-figure-mcp — Japan Anime Figure Price MCP Server
 
+[![AgentHub 已收录：japan-anime-figure-mcp](https://myagenthub.cn/badge/io.github.atushi1841/japan-anime-figure-mcp)](https://myagenthub.cn/p/io.github.atushi1841/japan-anime-figure-mcp)
 Read-only MCP server exposing the kensho Japan anime figure price dataset
 collected from MyFigureList and other sources.
 
