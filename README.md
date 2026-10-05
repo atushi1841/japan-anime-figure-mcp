@@ -17,6 +17,28 @@ collected from MyFigureList and other sources.
 - Marketplace: MyFigureList, various Japanese retailers
 - No network, no API key, no account required
 
+## Installation (Smithery)
+
+Install via Smithery registry:
+```bash
+smithery install @atushi1841/japan-anime-figure-mcp
+```
+
+## More MCP Servers
+
+- **[kensho-kaku](https://github.com/atushi1841/kensho-kaku)** — Sweepstakes from ken-kaku.com
+- **[kensho-kclub](https://github.com/atushi1841/kensho-kclub)** — Sweepstakes from kenshou.club
+- **[kensho-kema](https://github.com/atushi1841/kensho-kema)** — Sweepstakes from ke-ma.net
+- **[kensho-sweep-mcp](https://github.com/atushi1841/kensho-sweep-mcp)** — Full pipeline sweepstakes data
+- **[tcg-price-japan](https://github.com/atushi1841/tcg-price-japan)** — TCG used-price trends
+
+## Data Source: Apify Store
+
+The underlying dataset is also available as a managed Apify Actor:
+
+- **[Apify Store: japan-anime-figure-price-data](https://apify.com/atushi1841/acts/japan-anime-figure-price-data)**
+  (Actor ID: `DKzufUSvmuXNKHeYx`) — same anime figure price data, refreshed on a schedule
+
 ## Run
 
 ```bash
