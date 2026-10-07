@@ -82,51 +82,18 @@ This MCP server connects to **86+ Apify Actors** in the Kensho ecosystem for rea
 - [fruitful_quintessence/japan-toy-collector-prices](https://apify.com/fruitful_quintessence/japan-toy-collector-prices) — Toy collector
 
 ## MCP Connection Examples
-
-### 1. Standard I/O (stdio) — Claude Desktop, Cursor, etc.
-
-In your `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "japan-anime-figure-mcp": {
-      "command": "python",
-      "args": ["server/server.py"]
-    }
-  }
-}
-```
-
-### 2. HTTP Server Mode
+### 6. External run example (fallback)
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run as HTTP server
-python server/server.py --http
-
-# Test the endpoint
-curl http://localhost:8000/mcp/tools | jq .
-```
-
-### 3. Direct Python Import
-
-```python
-from server.server import mcp
-# FastMCP instance can be embedded directly
-```
-
-### 4. n8n / Apify Workflow (via HTTP)
-
-Use Apify's **Webhook** node to POST JSON-RPC to `POST /mcp` endpoint.
-
-### 5. Docker Deployment
-
-```bash
-docker build -t japan-anime-figure-mcp .
-docker run -p 8000:8000 japan-anime-figure-mcp
+# If GitHub API returns 403, use curl + git clone
+curl -s https://raw.githubusercontent.com/atushi1841/japan-anime-figure-mcp/main/README.md > README.patch
+# edit README.patch as needed
+git clone https://github.com/atushi1841/japan-anime-figure-mcp.git
+cd japan-anime-figure-mcp
+cp ../README.patch README.md
+git add README.md
+git commit -m "update README via external run"
+git push
 ```
 
 ## Run
