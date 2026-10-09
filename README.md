@@ -112,3 +112,13 @@ Requires `fastmcp>=3.0.0` (see `requirements.txt`).
 ```bash
 npx -y @anthropic-ai/mcpb pack . dist/japan-anime-figure-mcp.mcpb
 ```
+
+
+## MCP公式レジストリ登録済み
+
+本サーバーは MCP 公式レジストリに `io.github.atushi1841/japan-anime-figure-mcp` として登録済み（status: active）です。
+
+```bash
+# レジストリでの登録確認
+curl -s "https://registry.modelcontextprotocol.io/v0.1/servers?search=atushi1841" | grep -o "\"io.github.atushi1841/japan-anime-figure-mcp\""
+```
