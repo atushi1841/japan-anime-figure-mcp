@@ -1,0 +1,15 @@
+# Smithery.ai configuration for japan-anime-figure-mcp MCP
+description: "Japan anime figure prices from MyFigureList. Tools: current price, price history, lowest price."
+repositoryUrl: https://github.com/atushi1841/japan-anime-figure-mcp
+iconUrl: https://raw.githubusercontent.com/atushi1841/japan-anime-figure-mcp/main/icon.png
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |
+    (config) => ({
+      command: 'python',
+      args: ['${__dirname}/server/server.py']
+    })
+exampleConfig: {}
