@@ -32,6 +32,15 @@ smithery install @atushi1841/japan-anime-figure-mcp
 - **[kensho-sweep-mcp](https://github.com/atushi1841/kensho-sweep-mcp)** — Full pipeline sweepstakes data
 - **[tcg-price-japan](https://github.com/atushi1841/tcg-price-japan)** — TCG used-price trends
 
+## Smithery Registry
+
+This MCP server is also registered on the [Smithery Registry](https://smithery.ai):
+
+- **Smithery**: [server.smithery.ai/atushi1841/japan-anime-figure-mcp](https://server.smithery.ai/atushi1841/japan-anime-figure-mcp) — Install via Smithery
+- **Install command**: `npx @smithery/cli install atushi1841/japan-anime-figure-mcp --client claude`
+
+Browse the registry page for usage examples, configuration options, and one-click install for Claude Desktop, Cursor, and other MCP clients.
+
 ## Data Source: Apify Store
 
 The underlying dataset is also available as a managed Apify Actor:
