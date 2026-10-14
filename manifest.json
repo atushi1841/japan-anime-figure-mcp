@@ -1,0 +1,111 @@
+{
+  "manifest_version": "0.4",
+  "name": "japan-anime-figure-mcp",
+  "display_name": "Japan Anime Figure Price MCP",
+  "version": "1.0.0",
+  "description": "Read-only MCP server exposing Japanese anime figure price comparison data from MyFigureList and other sources. Three tools: current price, price history, and lowest price search.",
+  "long_description": "Exposes the accumulated kensho Japan anime figure price dataset (normalized from MyFigureList and other sources) as three read-only MCP tools: figure_current_price (latest price snapshot), figure_price_history (time series), and figure_lowest_price (cheapest available across shops). Pure local data, zero dependencies beyond fastmcp. Ideal for AI agents researching Japanese figure market prices and availability.",
+  "author": {
+    "name": "atushi1841"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atushi1841/kensho"
+  },
+  "homepage": "https://github.com/atushi1841/kensho",
+  "documentation": "https://github.com/atushi1841/kensho/tree/main/mcp/japan-anime-figure-mcp",
+  "support": "https://github.com/atushi1841/kensho/issues",
+  "server": {
+    "type": "python",
+    "entry_point": "src/stdio_main.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "${__dirname}",
+        "src/stdio_main.py"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  },
+  "keywords": [
+    "japan",
+    "anime",
+    "figure",
+    "price",
+    "myfigurelist",
+    "collectibles",
+    "market-data",
+    "mcp"
+  ],
+  "license": "MIT",
+  "privacy_policies": [],
+  "tools": [
+    {
+      "name": "figure_current_price",
+      "description": "Current price snapshot for an anime figure in the Japan dataset.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "figure name, series, character, or URL substring."
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "figure_price_history",
+      "description": "Price time series for an anime figure in the Japan dataset.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "figure name or URL substring."
+          },
+          "limit": {
+            "default": 50,
+            "type": "integer",
+            "description": "max number of history rows to return (default 50)."
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "figure_lowest_price",
+      "description": "Cheapest available price for an anime figure across all shops.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "figure name or URL substring."
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      }
+    }
+  ]
+}

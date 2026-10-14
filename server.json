@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.atushi1841/japan-anime-figure-mcp",
+  "description": "Japanese anime figure price comparison. Tools: current price, price history, lowest price.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/atushi1841/japan-anime-figure-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/atushi1841/japan-anime-figure-mcp/releases/download/v1.0.0/server.mcpb",
+      "version": "1.0.0",
+      "fileSha256": "d4f44c27f1c42af8b4e10353d10a9e68812f7dee9c5a829e2b01f8a5c1a0c405",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
