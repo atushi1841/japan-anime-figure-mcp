@@ -39,9 +39,9 @@ npx @smithery/cli install atushi1841/japan-anime-figure-mcp
 
 ## Smithery Registry
 
-This MCP server is also registered on the [Smithery Registry](https://smithery.ai):
+This MCP server is also registered on the [Smithery Registry](https://smithery.io):
 
-- **Smithery**: [server.smithery.ai/atushi1841/japan-anime-figure-mcp](https://server.smithery.ai/atushi1841/japan-anime-figure-mcp) — Install via Smithery
+- **Smithery**: [server.smithery.io/atushi1841/japan-anime-figure-mcp](https://server.smithery.io/atushi1841/japan-anime-figure-mcp) — Install via Smithery
 - **Install command**: `npx @smithery/cli install atushi1841/japan-anime-figure-mcp --client claude`
 
 Browse the registry page for usage examples, configuration options, and one-click install for Claude Desktop, Cursor, and other MCP clients.
@@ -50,7 +50,7 @@ Browse the registry page for usage examples, configuration options, and one-clic
 
 The underlying dataset is also available as a managed Apify Actor:
 
-- **[Apify Store: japan-anime-figure-price-data](https://apify.com/atushi1841/acts/japan-anime-figure-price-data)**
+- **[Apify Store: japan-anime-figure-price-data](https://apify.com/fruitful_quintessence/acts/japan-anime-figure-price-data)**
   (Actor ID: `DKzufUSvmuXNKHeYx`) — same anime figure price data, refreshed on a schedule
 
 ## Related Apify Actors
