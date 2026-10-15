@@ -50,7 +50,7 @@ Browse the registry page for usage examples, configuration options, and one-clic
 
 The underlying dataset is also available as a managed Apify Actor:
 
-- **[Apify Store: japan-anime-figure-price-data](https://apify.com/fruitful_quintessence/acts/japan-anime-figure-price-data)**
+- **[Apify Store: japan-anime-figure-price-data](https://apify.com/fruitful_quintessence/japan-anime-figure-price-data)**
   (Actor ID: `DKzufUSvmuXNKHeYx`) — same anime figure price data, refreshed on a schedule
 
 ## Related Apify Actors
