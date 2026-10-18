@@ -2,8 +2,8 @@
   "manifest_version": "0.4",
   "name": "japan-anime-figure-mcp",
   "display_name": "Japan Anime Figure Price MCP",
-  "version": "1.0.0",
-  "description": "Read-only MCP server exposing Japanese anime figure price comparison data from MyFigureList and other sources. Three tools: current price, price history, and lowest price search.",
+  "version": "1.0.1",
+  "description": "Read-only MCP server exposing Japanese anime figure price comparison data from MyFigureList and other sources. Three tools: current price, price history, and lowest price search. Apify Store: https://apify.com/fruitful_quintessence",
   "long_description": "Exposes the accumulated kensho Japan anime figure price dataset (normalized from MyFigureList and other sources) as three read-only MCP tools: figure_current_price (latest price snapshot), figure_price_history (time series), and figure_lowest_price (cheapest available across shops). Pure local data, zero dependencies beyond fastmcp. Ideal for AI agents researching Japanese figure market prices and availability.",
   "author": {
     "name": "atushi1841"
